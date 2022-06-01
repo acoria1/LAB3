@@ -1,0 +1,250 @@
+ul li{
+    text-transform: capitalize;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 3px;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    font-size: 15px;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.claro{
+    background-color: rgb(255, 255, 255);
+}
+
+.oscuro{
+    background-color: rgb(228, 226, 226);
+}
+
+.cabecera {
+    background-color: rgb(228, 124, 55);
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+td:hover{
+    background-color: black;
+    color: yellow;
+    transition: background-color 1s;
+    
+}
+
+tr.claro:hover,
+tr.oscuro:hover{
+    background-color: darkblue;
+    color: green;
+}
+
+.pointer{
+    cursor:pointer;
+}
+
+#principal{
+    /* background-color: rgb(189, 230, 189); */
+    width: 100%;
+    margin: 0 auto; 
+    /* el margin  0 auto me lo centra  */
+    padding-top: 10px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    width: 80%;
+}
+
+.table-container{
+    width:100%
+}
+
+td{
+    text-align: center;
+}
+
+.form-container{
+    margin-bottom: 10px;
+}
+
+h2{
+    text-align: center;
+}
+
+fieldset{
+    margin-bottom: 15px;
+}
+
+input {
+    margin: 6px;
+}
+
+.button {
+    margin: 15px
+}
+
+h3 {
+    text-align: center;
+}
+
+img {
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* @media screen and (max-width:700px){
+    #principal{
+        background-color: rgb(203, 250, 213);
+    }
+} */
+
+.form-div{
+    display:flex;
+    flex-direction: column;
+    margin:10px;
+}
+
+.form-div>label, legend{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.form-fieldset-div{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: flex-start; */
+}
+
+.transaccion{
+    width:50%;
+    margin:15px;
+}
+
+.button {
+    padding: 5px;
+}
+
+.form-div-icons{
+   display: inline-block;
+}
+
+.icon{
+    max-width: 30px;
+    height: auto;
+}
+
+/* #btnAlta{ background-color: rgb(71, 71, 248); }
+#btnModificar{ background-color: orange; }
+#btnEliminar{ background-color: red; } */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+footer>nav{
+    background-color: rgb(145, 145, 241);
+}
+
+nav p {
+    color:white;
+    letter-spacing: 2px;
+}
+
+nav>ul{
+    display: flex;
+    flex-direction: row;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    background-color: rgb(194, 169, 169);
+    border: 2px solid;
+}
+
+footer{
+    margin-top: 30px;
+}
+
+.div-header{
+    display:flex;
+    height: 300px;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: flex-end;
+}
+
+.div-header>h2{
+    color:white;
+    margin:20px;
+}
+
+.anuncio{
+    border: solid;
+    display:flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.anuncio>p{
+    margin:40px;
+}
+
+.anuncio-titulo{
+    font-size: 25px;
+    margin-bottom: 0px;
+    margin-top:0px;
+}
+
+.anuncio-precio{
+    color:green
+}
+
+.icon-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.button-anuncio{
+    background-color: orange;
+    color:white;
+    height: 50px;
+    font-weight: bold;
+}
+
+
+
+
+
+

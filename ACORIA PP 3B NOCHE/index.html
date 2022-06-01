@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./scripts/app.js" defer type="module"></script>
+    <link rel="stylesheet" href="./css//styles.css">
+    <title>Automoviles</title>
+</head>
+<body>
+    <header id="Header">
+        <nav>
+            <img src="./imagenes/car-logo.png" alt="Logo" />
+            <ul>
+                <li><a href=".">Nosotros</a></li>
+                <li><a href="./principal.html">Principal</a></li>
+                <li><a href=".">Administracion</a></li>                
+                <li><a href=".">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="principal">
+        <header class="header">
+            <h1>Administracion</h1>
+        </header>
+        <main class="main">
+            <section class="form-container">
+                <h2>Alta Anuncio</h2>
+                <form id="anuncios">
+                    <fieldset>
+                        <legend>Informacion Del Anuncio</legend>
+                    
+                    <div class="form-div">
+                        <label for="titulo">Titulo</label>
+                        <input type="text" name="txtTitulo" id="titulo" placeholder="Titulo" autocomplete="off" required>
+                    </div>
+                    <fieldset class="transaccion">
+                        <legend>Transacción</legend>
+                        <div class="form-fieldset-div">
+                            <label for="transaccion">Venta</label>
+                            <input type="radio" name="transaccion" id="transaccion" value="Venta" checked>
+                        </div>
+                        <div class="form-fieldset-div">
+                            <label for="transaccion">Alquiler</label>
+                            <input type="radio" name="transaccion" id="transaccion" value="Alquiler">
+                        </div>
+                    </fieldset>
+                    <div class="form-div">
+                        <label for="edad">Descripcion</label>
+                        <input type="text" name="txtDescripcion" id="descripcion" placeholder="Descripcion">
+                    </div>
+                    <div class="form-div">
+                        <label for="precio">Precio</label>
+                        <input type="number" name="precio" id="precio" placeholder="Precio" autocomplete="off" step="0.01" required>
+                    </div>
+
+                    <div class="form-div-icons">
+                        <img src="./imagenes/puerta.png" alt="icono1" class="icon"/>
+                        <input type="number" name="puertas" id="puertas" placeholder="Puertas" autocomplete="off" required min="0">
+                    </div>
+
+                    <div class="form-div-icons">
+                        <img src="./imagenes/kms.png" alt="icono1" class="icon"/>
+                        <input type="number" name="kms" id="kms" placeholder="KMs" autocomplete="off" required min="0">
+                    </div>
+
+                    <div class="form-div-icons">
+                        <img src="./imagenes/potencia.png" alt="icono1" class="icon"/>
+                        <input type="number" name="potencia" id="potencia" placeholder="Potencia" autocomplete="off" required min="0">
+                    </div>
+                    
+                    <input type="hidden" name="id" id="id" value="">
+                    <div class="form-div-buttons">
+                        <input id="btnAlta" class="button" type="submit" value="Alta Anuncio">
+                        <input id="btnModificar" class="button" type="submit" value="Guardar Cambios">
+                        <input id="btnEliminar" class="button" type="button" value="Eliminar Anuncio">
+                        <input id="btnCancelar" class="button" type="submit" value="Cancelar">
+                    </div>
+                </fieldset>                    
+                </form>
+            </section>           
+            <section class="table-container">              
+            </section>
+        </main>
+    </div>
+    <footer id="Header">
+        <nav>            
+            <ul>
+                <li><a href=".">Nosotros</a></li>
+                <li><a href="./principal.html">Principal</a></li>
+                <li><a href=".">Administracion</a></li>                
+                <li><a href=".">Contacto</a></li>
+            </ul>
+            <p> Todos los Derechos Reservados 2019 ©</p>
+        </nav>
+    </footer>
+</body>
+</html>
